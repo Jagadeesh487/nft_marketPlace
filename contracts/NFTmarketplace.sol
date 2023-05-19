@@ -135,7 +135,7 @@ contract NFTMarketplace is ERC721URIStorage{
         for (uint256 i = 0; i < itemCount; i++){
             if(idMarketItem[i + 1].owner == address(this)){
                     uint256 currentId = i + 1;
-                    MarketItem storage curentItem = idMarketItem[currentId];
+                    MarketItem storage currentItem = idMarketItem[currentId];
                     currentIndex += 1;
                 }
         }
