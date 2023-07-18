@@ -123,7 +123,7 @@ const NavBar = () => {
 
           {/* notivication  */}
           <div className={Style.navbar_container_right_notify}>
-            <MdNotifications className={Style.notify} onClick={()=> openNotification}/>
+            <MdNotifications className={Style.notify} onClick={()=> openNotification()}/>
             {notification && <Notification/>}
           </div>
 
@@ -153,7 +153,7 @@ const NavBar = () => {
       {/* sidebar compnent */}
       {openSideMenu && (
         <div className={Style.SideBar}>
-          <sideBAr setOpenSIdeMenu={setOpenSideMenu}/>
+          <SideBar setOpenSideMenu={setOpenSideMenu}/>
         </div>
       )}
     </div>
