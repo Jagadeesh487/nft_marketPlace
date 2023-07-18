@@ -15,7 +15,7 @@ const Notifications = () => {
           alt="profile image"
           width={50}
           height={50}
-          className={Style.notification_box}
+          className={Style.notification_box_img}
           />
         </div>
         <div className = {Style.notification_box_info}>
