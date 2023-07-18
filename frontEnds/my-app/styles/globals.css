@@ -7,18 +7,21 @@
   --icons-bg-color: #e2e6e9;
   --shadow-dark-color: #d3dae7;
   --shadow-light-color: #fff;
-  --main-bg-color: #ecf0f3;
+  --main-bg-color: #7e8386;
 
-  --box-shadow: 1rem 1rem 1rem var(--shadow-dark-color),
-  -1rem -1rem 1rem var(--shadow-light-color);
+  --box-shadow: 1rem 1rem 1rem var(var(--shadow-dark-color),
+  -1rem -1rem 1rem var(var(--shadow-light-color)));
 
-  --box-shadow-2: 0rem 0rem 0rem var(--shadow-dark-color),
-  -.3rem -.3rem 1rem var(--shadow-dark-color)
+  --box-shadow-2: 0rem 0rem 0rem var(var(--shadow-dark-color),
+  -.3rem -.3rem 1rem var(var(--shadow-dark-color)))
 
 }
 
 html,
 body {
+  /* padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -63,6 +66,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: rgb(0, 0, 0);
   }
 }

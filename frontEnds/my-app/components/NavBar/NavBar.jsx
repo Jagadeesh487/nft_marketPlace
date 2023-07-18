@@ -143,7 +143,7 @@ const NavBar = () => {
           {/* memu button */}
           <div className={Style.navbar_container_right_menuBtn}>
             <CgMenuRight
-              className={Style.memuIcon}
+              className={Style.menuIcon}
               onClick={()=>openSideBar()}
             />
           </div>
@@ -152,7 +152,7 @@ const NavBar = () => {
 
       {/* sidebar compnent */}
       {openSideMenu && (
-        <div className={Style.SideBar}>
+        <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu}/>
         </div>
       )}
