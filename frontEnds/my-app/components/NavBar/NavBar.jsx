@@ -92,14 +92,14 @@ const NavBar = () => {
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
               <input type='text' placeholder='Search NFT'/>
-              <BsSearch onClick={()=> {}} className = {Style.search_con}/>
+              <BsSearch onClick={()=> {}} className = {Style.search_icon}/>
             </div>
           </div>
         </div>
         {/* //end of left section
 
         //starting of right section */}
-        <div className={Style.navbar_container_Right}>
+        <div className={Style.navbar_container_right}>
           <div className={Style.navbar_container_right_discover}>
 
             {/* discover menu */}
