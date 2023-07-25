@@ -124,7 +124,7 @@ const SideBar = ({setOpenSideMenu}) => {
 
       <div className={Style.sideBar_menu}>
         <div>
-          <div className={Style.sideBAr_menu_box} onClick={()=>openDiscoverMenu()}>
+          <div className={Style.sideBar_menu_box} onClick={()=>openDiscoverMenu()}>
             <p>Discover</p>
             <TiArrowSortedDown/>
           </div>
@@ -158,7 +158,7 @@ const SideBar = ({setOpenSideMenu}) => {
         </div>
       </div>
 
-      <div className={Style.sideBAr_button}>
+      <div className={Style.sideBar_button}>
         <Button btnName="Create"/>
         <Button btnName="Connect wallet"/>
       </div>

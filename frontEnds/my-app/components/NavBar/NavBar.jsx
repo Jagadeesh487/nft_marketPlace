@@ -151,7 +151,7 @@ const NavBar = () => {
       </div>
 
       {/* sidebar compnent */}
-      {openSideMenu && (
+      {!openSideMenu && (
         <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu}/>
         </div>
