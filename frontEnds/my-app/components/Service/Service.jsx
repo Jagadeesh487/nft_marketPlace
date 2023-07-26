@@ -46,7 +46,7 @@ const Service = () => {
           <p className={Style.service_box_item_step}>
             <span>Step 1</span>
           </p>
-          <h3>Filter & Discover</h3>
+          <h3>Connect Wallet</h3>
           <p>Connect with wallet, discover, buy NFT's, sell your NFT's and earn money</p>
         </div>
 
@@ -60,7 +60,7 @@ const Service = () => {
           <p className={Style.service_box_item_step}>
             <span>Step 1</span>
           </p>
-          <h3>Filter & Discover</h3>
+          <h3>Start trading</h3>
           <p>Connect with wallet, discover, buy NFT's, sell your NFT's and earn money</p>
         </div>
 
