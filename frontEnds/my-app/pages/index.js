@@ -11,7 +11,6 @@ import {
   Category,
   Filter,
   NFTCard,
-  DayComponets,
   Collection
 } from "../components/components_index"
 
