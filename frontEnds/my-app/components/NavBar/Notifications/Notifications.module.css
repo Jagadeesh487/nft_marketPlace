@@ -12,7 +12,7 @@
     background-color: var(--main-bg-color)
 }
 
-.notification>p{
+.notification > p{
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -20,7 +20,7 @@
 
 .notification_box{
     display: flex;
-    align-items: flex_start;
+    align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
     transition: all .3s ease-in;
@@ -28,7 +28,7 @@
 
 .notification_box:hover{
     background-color: var(--icons-color);
-    color: var(--shadow-dark_color);
+    color: var(--shadow-dark-color);
     border-radius: .3rem;
 }
 

@@ -29,7 +29,7 @@
     padding: 1rem;
     background-color: var(--main-bg-color);
     border-radius: 2.5rem;
-    box-shadow: var(--main-bg_color);
+    box-shadow: var(--main-bg-color);
 }
 
 /* //create sectiom */
@@ -139,7 +139,7 @@
 }
 
 /* right section */
-.bigNFTSlider_box_right_box{
+.bigNFTSlider_box_right{
     position: relative;
 }
 

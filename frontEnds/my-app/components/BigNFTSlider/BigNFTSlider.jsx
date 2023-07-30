@@ -12,7 +12,7 @@ import Button from '../Button/Button';
 
 
 const BigNFTSlider = () => {
-    const [IdNumber, setIdNumber] = useState(1);
+    const [IdNumber, setIdNumber] = useState(3);
     const sliderData = [
         {
             title: "Hello NFT",

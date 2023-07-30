@@ -5,7 +5,7 @@ import Link from "next/link";
 //import icons
 import {MdNotifications} from 'react-icons/md';
 import {BsSearch} from 'react-icons/bs';
-import {cgMenuLeft, CgMenuRight} from 'react-icons/cg';
+import {CgMenuLeft, CgMenuRight} from 'react-icons/cg';
 
 //imternal import
 import Style from './NavBar.module.css';
@@ -135,8 +135,9 @@ const NavBar = () => {
           {/* userprofile */}
           <div className={Style.navbar_container_right_profile_box}>
             <div className ={Style.navbar_container_right_profile}>
-              <Image src={images.user1} alt="Profile" width={40} height={40} onClick={() => openProfile()}/>
-              {profile && <Profile/>}
+              <Image src={images.user1} alt="Profile" width={40} height={40} className ={Style.navbar_container_right_profile} onClick={() => openProfile()}/>
+              {profile && <Profile/>
+              }
             </div>
           </div>
 

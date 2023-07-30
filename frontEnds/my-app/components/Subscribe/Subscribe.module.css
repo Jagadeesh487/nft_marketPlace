@@ -17,7 +17,7 @@
 }
 
 .subscribe_box_left p{
-    font-size: 1,2rem;
+    font-size: 1.2rem;
 }
 
 .subscribe_box_left_box{
@@ -77,7 +77,7 @@
     }
 
     .subscribe_box_left_input{
-        width: 100%;
+        width: 90%;
         padding: 1rem;
     }
 
