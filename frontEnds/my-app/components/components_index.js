@@ -11,6 +11,7 @@ import Filter from "./Filter/Filter";
 import NFTCard from "./NFTCard/NFTCard";
 import Collection from "./Collection/Collection";
 import DayComponets from "./Collection/DayComponents/DayComponets";
+import FollowerTab from "./FollowerTab/FollowerTab";
 
 export{
     Button,
@@ -25,5 +26,6 @@ export{
     Filter,
     NFTCard,
     DayComponets,
-    Collection
+    Collection,
+    FollowerTab
 };
