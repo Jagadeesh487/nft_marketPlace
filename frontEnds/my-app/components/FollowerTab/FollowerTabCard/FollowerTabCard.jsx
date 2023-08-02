@@ -7,11 +7,11 @@ import Style from './FollowerTabCard.module.css';
 import images from '../../../img';
 
 
-const FollowerTabCard = ({i, el}) => {
+const FollowerTabCard =   ({i, el}) => {
   const [following, setFollowing] = useState(false);
 
   const followMe = () => {
-    if(!followMe){
+    if(!following){
       setFollowing(true);
     }
     else{
