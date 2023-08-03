@@ -12,6 +12,8 @@ import NFTCard from "./NFTCard/NFTCard";
 import Collection from "./Collection/Collection";
 import DayComponets from "./Collection/DayComponents/DayComponets";
 import FollowerTab from "./FollowerTab/FollowerTab";
+import AudioLive from "./AudioLive/AudioLive";
+
 
 export{
     Button,
@@ -27,5 +29,6 @@ export{
     NFTCard,
     DayComponets,
     Collection,
-    FollowerTab
+    FollowerTab,
+    AudioLive
 };
