@@ -4,7 +4,6 @@ import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai';
 import {TbPlayerPlay, TbPlayerPause} from 'react-icons/tb';
 import Style from'./AudioCard.module.css';
 import images from '../../../img';
-
 const AudioCard = () => {
     const [like, setLike] = useState(false);
     const [play, setPlay] = useState(false);
@@ -62,9 +61,14 @@ const AudioCard = () => {
                     )}
                 </div>
             </div>
-        </div>
+            <div className={Style.audioCard_box_img}>
+            <Image src={images.creatorbackground10}
+            alt="background"
+            width={500}
+            height={500}/>
+            </div>
 
-        <div className={Style.audioCard_box_details}>
+            <div className={Style.audioCard_box_details}>
             <div className={Style.audioCard_box_details_info}>
                 <h4>NFT music #1221</h4>
                 <div className={Style.audioCard_box_details_info_price}>
@@ -76,14 +80,9 @@ const AudioCard = () => {
             <div className={Style.audioCard_box_details_stock}>
                 <small>24 in stock</small>
             </div>
+            </div>
         </div>
 
-        <div className={Style.audioCard_box_img}>
-            <Image src={images.creatorbackground10}
-            alt="background"
-            width={500}
-            height={500}/>
-        </div>
     </div>
   )
 }
