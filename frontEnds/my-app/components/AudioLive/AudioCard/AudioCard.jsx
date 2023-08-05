@@ -4,6 +4,7 @@ import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai';
 import {TbPlayerPlay, TbPlayerPause} from 'react-icons/tb';
 import Style from'./AudioCard.module.css';
 import images from '../../../img';
+import LikeProfile from '../../LikeProfile/LikeProfile'
 const AudioCard = () => {
     const [like, setLike] = useState(false);
     const [play, setPlay] = useState(false);
@@ -18,7 +19,7 @@ const AudioCard = () => {
 
     const playMusic = () => {
         if(!play){
-            setLike(true);
+            setPlay(true);
         }else{
             setPlay(false);
         }
@@ -51,7 +52,7 @@ const AudioCard = () => {
                 <div className={Style.audioCard_box_musicPlayer}
                 onClick={()=> playMusic()}>
                     {play?(
-                        <div className={Style.audioCard_bix_musicPlayer_icon}>
+                        <div className={Style.audioCard_box_musicPlayer_icon}>
                             <TbPlayerPause/>
                         </div>
                         ):(
@@ -78,6 +79,7 @@ const AudioCard = () => {
             </div>
 
             <div className={Style.audioCard_box_details_stock}>
+                <LikeProfile/>
                 <small>24 in stock</small>
             </div>
             </div>

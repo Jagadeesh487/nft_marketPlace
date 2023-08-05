@@ -10,7 +10,7 @@ import "hardhat/console.sol"; //to check the value in console
 
 
 contract NFTMarketplace is ERC721URIStorage{
-    using Counters for Counters.Counter;
+    using Counters for Counters.Counter;    
 
     //variables
     Counters.Counter private _tokenIds; 
@@ -66,7 +66,7 @@ contract NFTMarketplace is ERC721URIStorage{
         _tokenIds.increment();
         uint256 newTokenId = _tokenIds.current();
         _mint(msg.sender, newTokenId);
-        _setTokenURI(newTokenId, tokenURI);
+        _setTokenURI(newTokenId, _tokenURI);
         createMarketItem(newTokenId, price);
         return newTokenId;
     }
