@@ -1,5 +1,8 @@
-import React from 'react'
-import Style from './SliderCard.module.css'
+import React, {useState, useEffect, useRef} from 'react';
+
+import Style from "./SliderCard.module.css";
+
+
 
 const SliderCard = () => {
   return (
