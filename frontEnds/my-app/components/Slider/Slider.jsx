@@ -39,7 +39,7 @@ const Slider = () => {
           </div>
         </div>
 
-        {/* <motion.div className={Style.slider_box_items} ref={dragSlider}>
+        <motion.div className={Style.slider_box_items} ref={dragSlider}>
           <motion.div ref={dragSlider}
           className={Style.slider_box_item}
           drag="x"
@@ -48,7 +48,7 @@ const Slider = () => {
               <SliderCard key={i+1} el={el} i={i}/>
             ))}
           </motion.div>
-        </motion.div> */}
+        </motion.div>
       </div>
     </div>
   )
