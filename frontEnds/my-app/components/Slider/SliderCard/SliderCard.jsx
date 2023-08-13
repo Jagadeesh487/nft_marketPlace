@@ -12,18 +12,18 @@ const SliderCard = () => {
     <motion.div className={Style.sliderCard}>
       <div className={Style.sliderCard_box}>
         <motion.div className = {Style.sliderCard_box_img}>
-          <Image src={images.creatorbackground1} alt="slider profile" width={500} height={300} objectFit="cover"/>
+          <Image src={images.creatorbackground1} className = {Style.sliderCard_box_img_img} alt="slider profile" width={500} height={300} objectFit="cover"/>
         </motion.div>
         <div className={Style.sliderCard_box_title}>
           <p>NFT Video #1243</p>
           <div className={Style.sliderCard_box_title_like}>
-            <LikeProfile/>
+            {/* <LikeProfile/> */}
             <small>1 of 100</small>
           </div>
         </div>
 
         <div className={Style.sliderCard_box_price}>
-          <div className={Style.sliderCard_box_prive_box}>
+          <div className={Style.sliderCard_box_price_box}>
             <small>Current Bid</small>
             <p>1.000 ETH</p>
           </div>
