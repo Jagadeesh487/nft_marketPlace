@@ -15,7 +15,8 @@ import {
   FollowerTab,
   AudioLive,
   Slider,
-  Brand
+  Brand,
+  Video
 } from "../components/components_index"
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
       <Category/>
       <Subscribe/>
       <Brand/>
+      <Video/>
     </div>
   )
 }
