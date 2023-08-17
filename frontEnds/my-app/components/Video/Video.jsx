@@ -18,7 +18,7 @@ const Video = () => {
         </p>
         <div className={Style.Video_box_frame}>
           <div className={Style.Video_box_frame_left}>
-            <Image src={}/>
+            <Image/>
           </div>
         </div>
       </div>
