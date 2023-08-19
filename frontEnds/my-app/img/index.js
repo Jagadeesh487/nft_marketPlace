@@ -43,6 +43,7 @@ import nft_image_4 from "./nft-image-4.png";
 import musiceWave from "./musicwave.png";
 import update from "./update.png";
 import eran from './eran.png'
+import NFTVideo from './nftvideo.png'
 
 export default {
   collection,
@@ -89,5 +90,6 @@ export default {
   vimeo,
   youtube,
   zgcmq,
-  eran
+  eran,
+  NFTVideo
 };

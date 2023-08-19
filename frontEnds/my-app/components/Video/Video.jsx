@@ -16,12 +16,21 @@ const Video = () => {
           Check out our hottest videos. View more and share more new perspectives
           on just about any topic. Everyone's welcome.
         </p>
-        <div className={Style.Video_box_frame}>
-          <div className={Style.Video_box_frame_left}>
-            <Image/>
-          </div>
-        </div>
+  
       </div>
+      <div className={Style.Video_box_frame}>
+          <div className={Style.Video_box_frame_left}>
+            <Image 
+            src = {images.NFTVideo}
+            alt="Video Image"
+            width = {1080}
+            height = {720}
+            objectFit = "Cover"
+            className={Style.Video_box_frame_left_img}
+            />
+          </div>
+          <div className={Style.Video_box_frame_right}>Hey</div>
+        </div>
     </div>
   )
 }
