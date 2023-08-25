@@ -19,73 +19,23 @@ const FollowerTab = () => {
         images.user7,
         images.user8,           
     ];
-    const FollowingArray = [
-        {
-            background: images.creatorbackground1,
-            user: images.user1,
-        },
-        {
-            background: images.creatorbackground2,
-            user: images.user2,
-        },
-        {
-            background: images.creatorbackground3,
-            user: images.user3,
-        },
-        {
-            background: images.creatorbackground4,
-            user: images.user4,
-        },
-        {
-            background: images.creatorbackground5,
-            user: images.user5,
-        },
-        {
-            background: images.creatorbackground6,
-            user: images.user6,
-        },
-        {
-            background: images.creatorbackground7,
-            user: images.user7,
-        },
-        {
-            background: images.creatorbackground8,
-            user: images.user8,
-        },
+    const FollowingArray = [images.user1,
+        images.user2,
+        images.user3,
+        images.user4,
+        images.user5,
+        images.user6,
+        images.user7,
+        images.user8,
     ];
-    const NewsArray = [
-        {
-            background: images.creatorbackground1,
-            user: images.user1,
-        },
-        {
-            background: images.creatorbackground2,
-            user: images.user2,
-        },
-        {
-            background: images.creatorbackground3,
-            user: images.user3,
-        },
-        {
-            background: images.creatorbackground4,
-            user: images.user4,
-        },
-        {
-            background: images.creatorbackground5,
-            user: images.user5,
-        },
-        {
-            background: images.creatorbackground6,
-            user: images.user6,
-        },
-        {
-            background: images.creatorbackground7,
-            user: images.user7,
-        },
-        {
-            background: images.creatorbackground8,
-            user: images.user8,
-        },]
+    const NewsArray = [images.user1,
+        images.user2,
+        images.user3,
+        images.user4,
+        images.user5,
+        images.user6,
+        images.user7,
+        images.user8,]
 
     const [popular, setPopular] = useState(false);
     const [following, setFollowing] = useState(true);
