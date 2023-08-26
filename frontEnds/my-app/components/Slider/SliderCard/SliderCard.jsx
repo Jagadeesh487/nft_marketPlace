@@ -12,7 +12,7 @@ const SliderCard = ({el, i}) => {
     <motion.div className={Style.sliderCard}>
       <div className={Style.sliderCard_box}>
         <motion.div className = {Style.sliderCard_box_img}>
-          <Image src={el.background} className = {Style.sliderCard_box_img_img} alt="slider profile" width={500} height={300} objectFit="cover"/>
+          <Image src={el.background} className = {Style.sliderCard_box_img_img} alt="slider profile" width={300} height={150} objectFit="cover"/>
         </motion.div>
         <div className={Style.sliderCard_box_title}>
           <p>NFT Video #1243</p>
