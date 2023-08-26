@@ -5,12 +5,12 @@ import {MdVerified} from 'react-icons/md';
 import Style from './DayComponets.module.css';
 import images from '../../../img';
 
-const DayComponets = () => {
+const DayComponets = ({el, i}) => {
   return (
     <div className={Style.daysComponent}>
       <div className={Style.daysComponent_box}>
         <div className={Style.daysComponent_box_img}>
-          <Image src={images.creatorbackground1}
+          <Image src={el.background}
           className={Style.daysComponent_box_img_img}
           alt="profile background"
           width={500}
@@ -53,7 +53,7 @@ const DayComponets = () => {
           <div className={Style.daysComponent_box_title_info}>
             <div className={Style.daysComponent_box_title_info_profile}>
               <Image
-              src={images.user1}
+              src={el.user}
               alt="profile"
               width={30}
               height={30}

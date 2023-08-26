@@ -5,14 +5,22 @@ import {BsCircleFill} from 'react-icons/bs';
 import Style from './Category.module.css'
 import images from '../../img'
 const Category = () => {
-    const CategoryArray = [1, 2, 3, 4, 5, 6];
+    const FollowingArray = [
+        images.creatorbackground1,
+        images.creatorbackground10,
+        images.creatorbackground9,
+        images.creatorbackground7,
+        images.creatorbackground6,
+        images.creatorbackground11,
+
+    ]
   return (
     <div className={Style.box_catagory}>
         <div className={Style.catagory}>
-        {CategoryArray.map((el,i)=>(
+        {FollowingArray.map((el,i)=>(
             <div className = {Style.category_box} key={1+1}>
                 <Image
-                src={images.creatorbackground1}
+                src={el}
                 className={Style.category_box_img}
                 alt="background image"
                 width = {350}
