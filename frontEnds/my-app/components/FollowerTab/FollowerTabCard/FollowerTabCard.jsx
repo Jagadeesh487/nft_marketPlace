@@ -31,8 +31,8 @@ const FollowerTabCard =   ({i, el}) => {
           src = {el.background} // this linw of code will help to change the
           //  background image of the followertab card
           alt = "profile Background"
-          width={500}
-          height={300}          
+          width={250}
+          height={150}          
         />
         </div>
 
