@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from './collection.module.css'
+import Style from '../styles/collection.module.css'
 import images from '../img'
 import { Banner, CollectionProfile, NFTCardTwo } from '../collectionPage/collectionindex'
 import  {Slider, Brand} from '../components/components_index'
