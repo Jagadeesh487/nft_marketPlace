@@ -44,9 +44,11 @@ import musiceWave from "./musicwave.png";
 import update from "./update.png";
 import eran from './eran.png'
 import NFTVideo from './nftvideo.png'
+import upload from './upload1.png'
 
 export default {
   collection,
+  upload,
   update,
   musiceWave,
   nft_image_1,
