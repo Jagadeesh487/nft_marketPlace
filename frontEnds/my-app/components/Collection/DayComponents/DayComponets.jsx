@@ -13,8 +13,8 @@ const DayComponets = ({el, i}) => {
           <Image src={el.background}
           className={Style.daysComponent_box_img_img}
           alt="profile background"
-          width={500}
-          height={300}
+          width={300}
+          height={150}
           objectFit='covers'
           />
         </div>
@@ -23,8 +23,8 @@ const DayComponets = ({el, i}) => {
           <Image
           src={images.creatorbackground2}
           alt="profile"
-          width={200}
-          height={200}          
+          width={100}
+          height={100}          
           objectFit='covers'
           className={Style.daysComponent_box_img_1}
           />
@@ -32,8 +32,8 @@ const DayComponets = ({el, i}) => {
           <Image
           src={images.creatorbackground2}
           alt="profile"
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           objectFit='covers'
           className={Style.daysComponent_box_img_2}
           />
@@ -41,8 +41,8 @@ const DayComponets = ({el, i}) => {
           <Image
           src={images.creatorbackground2}
           alt="profile"
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           objectFit='covers'
           className={Style.daysComponent_box_img_3}
           />
