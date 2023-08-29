@@ -24,7 +24,7 @@ const Home = () => {
     <div className={Style.homePage}>
       <HeroSection/>
       <Service/>
-      {/* <BigNFTSlider/> */}
+      <BigNFTSlider/>
       <Title 
       heading="Audio Collection"
       paragraph="Discover the most outstanding NFTs in all topics of life"/>
