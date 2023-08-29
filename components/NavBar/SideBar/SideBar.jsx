@@ -16,8 +16,9 @@ import {
 import Style from './SideBar.module.css'
 import images from '../../../img'
 import Button from '../../Button/Button';
+// import { NFTMarketplaceContext } from '@/context/NFTMarketplaceContext';
 
-const SideBar = ({setOpenSideMenu}) => {
+const SideBar = ({setOpenSideMenu, currentAccount, connectWallet}) => {
   // usestate
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
@@ -96,6 +97,8 @@ const SideBar = ({setOpenSideMenu}) => {
   const closeSideBar = () => {
     setOpenSideMenu(false);
   }
+
+  // const {currentAccount, connectWallet} = useContext(NFTMarketplaceContext);
   
   return (
     <div className = {Style.sideBar}>
@@ -159,8 +162,16 @@ const SideBar = ({setOpenSideMenu}) => {
       </div>
 
       <div className={Style.sideBar_button}>
-        <Button btnName="Create" handelClick={()=>{}}/>
-        <Button btnName="Connect wallet" handelClick={()=>{}}/>
+        {
+          currentAccount == "" ? (<Button btnName="connect" 
+          handelClick={() => connectWallet()}/>):(
+            <a href="/uploadNFT">
+              <Button btnName="Create" handelClick={() => {}}/>
+            </a>
+            )
+        }
+        {/* <Button btnName="Create" handelClick={()=>{}}/> */}
+        {/* <Button btnName="Connect wallet" handelClick={()=>{}}/> */}
       </div>
     </div>
   )

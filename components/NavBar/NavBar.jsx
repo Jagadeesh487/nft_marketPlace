@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import Image from "next/image";
+import {DiJqueryLogo} from 'react-icons/di'
 import Link from "next/link";
 
 //import icons
@@ -12,6 +13,10 @@ import Style from './NavBar.module.css';
 import {Discover, HelpCenter, Notification, Profile, SideBar} from './index';
 import {Button} from "../components_index";
 import images from "../../img";
+
+//imporing from smart contract
+import { NFTMarketplaceContext } from '@/context/NFTMarketplaceContext';
+
 
 const NavBar = () => {
   //usestate
@@ -76,6 +81,9 @@ const NavBar = () => {
     }
   }
 
+  //samrt contract 
+  const {currentAccount, connectWallet} = useContext(NFTMarketplaceContext);
+
   return (
     <div className={Style.navbar}>
       <div className={Style.navbar_container}>
@@ -129,7 +137,15 @@ const NavBar = () => {
 
           {/* create button section */}
           <div className={Style.navbar_container_right_button}>
-            <Button btnName = "Create" handelClick={()=>{}}/>
+            {currentAccount == "" ? (
+            < Button btnName = "Connect" handleClick = {()=>connectWallet()}/>):(
+              <a href="/uploadNFT">
+                <Button btnName = "Create" handleClick = {() => {}}/>
+              </a>
+            )
+            
+            }
+            
           </div>
 
           {/* userprofile */}
@@ -154,7 +170,9 @@ const NavBar = () => {
       {/* sidebar compnent */}
       {openSideMenu && (
         <div className={Style.sideBar}>
-          <SideBar setOpenSideMenu={setOpenSideMenu}/>
+          <SideBar setOpenSideMenu={setOpenSideMenu}
+          currentAccount = {currentAccount}
+          connectWallet={connectWallet}/>
         </div>
       )}
     </div>

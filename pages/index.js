@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 // internal import
 import Style from '../styles/index.module.css';
@@ -19,12 +19,23 @@ import {
   Video
 } from "../components/components_index"
 
+import {NFTMarketplaceContext} from '../context/NFTMarketplaceContext'
+
 const Home = () => {
+  const{checkIfWalletConnected} = useContext(NFTMarketplaceContext);
+  useEffect(() => {
+    checkIfWalletConnected();
+}, []);
+// const{checkContract} = useContext(NFTMarketplaceContext);
+// useEffect(() => {
+// checkContract();
+// }, [])
+  
   return (
     <div className={Style.homePage}>
       <HeroSection/>
       <Service/>
-      <BigNFTSlider/>
+      {/* <BigNFTSlider/> */}
       <Title 
       heading="Audio Collection"
       paragraph="Discover the most outstanding NFTs in all topics of life"/>
@@ -40,7 +51,7 @@ const Home = () => {
       <Title 
       heading="Browse by category"
       paragraph="Explore the NFTs in the most features categaries"/>
-      <Category/>
+      {/* <Category/> */}
       <Subscribe/>
       <Brand/>
       <Video/>

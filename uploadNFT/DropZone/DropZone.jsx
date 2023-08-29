@@ -5,11 +5,15 @@ import Image from 'next/image'
 import images from '../../img'
 
 const DropZone = ({title, heading, subHeading, 
-  itemName, website, description, royalties, fileSize, 
-  category, properties, image}) => {
+  name, website, description, royalties, fileSize, 
+  category, properties, uploadToIPFS, setImage}) => {
     const [fileUrl, setFileUrl] = useState(null)
-    const onDrop = useCallback(async(acceptedFile)=>
-    setFileUrl(acceptedFile[0]))
+    const onDrop = useCallback(async(acceptedFile)=>{
+    const url = await uploadToIPFS(acceptedFile[0])
+    setFileUrl(url)
+    setImage(url)
+    console.log(url);
+    });
 
     const {getRootProps, getInputProps } = useDropzone({
       onDrop,
@@ -25,7 +29,7 @@ const DropZone = ({title, heading, subHeading,
           <p>{title}</p>
           <div className = {Style.DropZone_box_input_img}>
             <Image 
-            src = {image}
+            src = {images.upload}
             alt = "upload"
             width = {90}
             height = {100}
@@ -42,7 +46,7 @@ const DropZone = ({title, heading, subHeading,
         fileUrl && (
           <aside className = {Style.DropZone_box_aside}>
             <div className = {Style.DropZone_box_aside_box}>
-              <Image src={images.nft_image_1}
+              <Image src={fileUrl}
               alt="nftImage"
               width={200}
               height={200}
@@ -52,7 +56,7 @@ const DropZone = ({title, heading, subHeading,
                 <div className = {Style.DropZone_box_aside_box_preview_one}>
                   <p>
                     <span>NFT Name: </span>                    
-                      {itemName || ""}
+                      {name || ""}
                   </p>
                   <p>
                     <span>Website: </span>                    

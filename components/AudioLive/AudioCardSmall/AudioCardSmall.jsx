@@ -15,7 +15,7 @@ const AudioCardSmall = () => {
     }
   }
   return (
-    <div classsName={Style.audioPlayer}>
+    <div className={Style.audioPlayer}>
       <div className={Style.audioPlayer_box}>
         <Image
         src={images.creatorbackground5}
