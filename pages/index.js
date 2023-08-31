@@ -36,25 +36,25 @@ const Home = () => {
       <HeroSection/>
       <Service/>
       {/* <BigNFTSlider/> */}
-      <Title 
+      {/* <Title 
       heading="Audio Collection"
-      paragraph="Discover the most outstanding NFTs in all topics of life"/>
-      <AudioLive/>
-      <FollowerTab/>
-      <Slider/>
-      <Collection/>
-      <Title 
+      paragraph="Discover the most outstanding NFTs in all topics of life"/> */}
+      {/* <AudioLive/> */}
+      {/* <FollowerTab/> */}
+      {/* <Slider/> */}
+      {/* <Collection/> */}
+      {/* <Title 
       heading="Featured NFT's"
-      paragraph="Discover the most outstanding NFTs in all topics of life"/>
-      <Filter/>
-      <NFTCard/>
-      <Title 
+      paragraph="Discover the most outstanding NFTs in all topics of life"/> */}
+      {/* <Filter/> */}
+      {/* <NFTCard/> */}
+      {/* <Title 
       heading="Browse by category"
-      paragraph="Explore the NFTs in the most features categaries"/>
+      paragraph="Explore the NFTs in the most features categaries"/> */}
       {/* <Category/> */}
-      <Subscribe/>
-      <Brand/>
-      <Video/>
+      {/* <Subscribe/> */}
+      {/* <Brand/> */}
+      {/* <Video/> */}
     </div>
   )
 }

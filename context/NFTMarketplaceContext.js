@@ -40,7 +40,7 @@ const connectingWithSmartContract = async() => {
         const web3Modal = new Web3Modal();
         const connection = await web3Modal.connect();
         const provider = new ethers.providers.Web3Provider(connection);        
-        const signer = provider.getSigner();
+        const signer =  provider.getSigner();
         const contract = fetchContract(signer);
         return contract;         
     }
@@ -51,7 +51,7 @@ const connectingWithSmartContract = async() => {
 
 export const NFTMarketplaceContext = React.createContext();
 export const NFTMarketplaceProvider = ({children}) => {
-    const titleData = "Discover, collect and sell NFT's and deploy";
+    const titleData = "Discover, collect, and sell NFTs";
 
     // const checkContract = async () => {
     //     const contract = await connectingWithSmartContract();
@@ -142,7 +142,7 @@ export const NFTMarketplaceProvider = ({children}) => {
         try{
             const price = ethers.utils.parseUnits(formInputPrice, "ether");
 
-            const contract = await connectingWithSmartContract()
+            const contract = await connectingWithSmartContract();
             const listingPrice = await contract.getListingPrice();
             const transaction = !isReselling ? 
             await contract.createToken(url, price,{
@@ -153,7 +153,7 @@ export const NFTMarketplaceProvider = ({children}) => {
                 value: listingPrice.toString(),
             });
             await transaction.wait();
-            router.push('/searchPage')
+            // router.push('/searchPage')
             console.log(transaction);
         }
         catch(error){
